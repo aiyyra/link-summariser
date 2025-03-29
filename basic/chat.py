@@ -1,14 +1,16 @@
 from dotenv import load_dotenv
 
 from langchain.schema import AIMessage, HumanMessage, SystemMessage # Gemini would not have system message, but we will keep the import in case for model changes
-from langchain_google_genai import ChatGoogleGenerativeAI 
+# from langchain_google_genai import ChatGoogleGenerativeAI 
+from langchain.chat_models import init_chat_model
 
 
 # load api key
 load_dotenv()
 
 # Init chat model
-model = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+# model = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+model = init_chat_model("llama3-8b-8192", model_provider="groq")
 
 # Init chat history
 chat_history = [] # a list to store history of chat
@@ -20,9 +22,9 @@ chat_history = [] # a list to store history of chat
 #     HumanMessage(content="What is 81 divided by 9?")
 # ]
 
-# # We can keep this here to make a system message when suitable model is used
-# system_message = SystemMessage(content="You are a helpful AI assistant.")
-# chat_history.append(system_message)  # Add system message to chat history
+# We can keep this here to make a system message when suitable model is used
+system_message = SystemMessage(content="You are a helpful AI assistant.")
+chat_history.append(system_message)  # Add system message to chat history
 
 # Chat loop
 while True:

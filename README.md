@@ -36,3 +36,17 @@ It is important to note that I encourage readings and you need to read a lot of 
 
 - Could use chat template but will ignore for now
 - Could check other model in huggingface and use huggingface interface for more robust model for our usecase.
+
+### 29-3-2025
+
+#### Planning
+
+- Create a basic tool that could be call by model for doing a websearch (it is a simplify websearch that retrieve link and research the link). ❌
+- for now, just add every source code of the pages into the chat history and paste it in terminal as a whole, we will summarise later. ✔️
+
+#### Notes
+
+- At first, i was trying to use SerpAPI for web searching, however on my research I found that Tavily API provide a more robust searching and simpler integration to our use case. For that, we will use Tavily for this project.
+- Changing model to groq, this ensure we got the system prompt that gemini lacks. It is also free :>
+- We finish researching and adding Tavily as our websearch solution. however we still didn't implement a tool call for the agent to call.
+- An update to the poetry dependencies also happened, as i keep to toml file at other folder, the change is not potrayed in github.
