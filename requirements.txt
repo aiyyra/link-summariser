@@ -1,0 +1,9 @@
+langchain
+langchain_community
+langchain-groq
+openai
+groq 
+requests
+beautifulsoup4
+tavily-python
+python-dotenv

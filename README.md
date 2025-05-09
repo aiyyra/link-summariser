@@ -50,3 +50,15 @@ It is important to note that I encourage readings and you need to read a lot of 
 - Changing model to groq, this ensure we got the system prompt that gemini lacks. It is also free :>
 - We finish researching and adding Tavily as our websearch solution. however we still didn't implement a tool call for the agent to call.
 - An update to the poetry dependencies also happened, as i keep to toml file at other folder, the change is not potrayed in github.
+
+### 30-3-2025
+
+#### Planning
+
+- Going to reconstruct myself, as i was quite blur on how to actually make an agent.
+- First, make an agent without tool that can follow the ReAct (reasoning action loop).
+- If possible, implement our tool, which is extracting/ searching the web.
+
+#### Notes
+
+- I was somewhat blur on agent architecture in langchain, so we will learn it from the ground up.

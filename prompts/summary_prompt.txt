@@ -1,0 +1,5 @@
+Please read the following content and generate a meaningful and well structured summary that captures the key points, main ideas, and any relevant facts. 
+Be sure to accomodate the summary for a passionate promising postgraduate student that is very attentive to details when learning something.
+
+
+{content}
